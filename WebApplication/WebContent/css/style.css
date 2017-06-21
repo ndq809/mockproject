@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+.divMain {
+	border: 1px solid #725a65;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-color: silver;
+}
+.menu:HOVER{
+	border-color:#AAAAAA;
+	border-width: medium;
+}
+
+.danhMuc ul {
+	margin-left: -40px;
+}
+
+.danhMuc ul li {
+	height: 35px;
+	line-height: 28px;
+	padding-left: 20px;
+	background: transparent url(../images/nut.png) no-repeat scroll 0px 8px;
+	text-decoration: none;
+	list-style: none;
+	margin-bottom: -10px;
+}
+
+.danhMuc ul li a {
+	display: block;
+	height: 28px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+p{
+	text-align:justify;
+}
+.impress{
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+}
+.detailBox {
+    border:1px solid #bbb;
+    margin:50px;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
+.title_slide{
+	font-family: "UVF BankGothic Md BT";
+}
+.translate_control a{
+	color: white;
+}
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+textarea {
+    resize: none;
+}
+.home:HOVER {
+	background: white;
+}
+.mybutton{
+	background-color: #555;
+	border: #333;
+}
+.mybutton:HOVER {
+	background-color: #444;
+}
+.mytab a{
+	color: white;
+}
+.mytab a:FOCUS{
+	color: #111;
+}
+.mynav li a{
+	background: #888;
+	padding: 5px 15px;
+}
+.mynav li a:HOVER {
+	background: #777;
+}
+.activeItem{
+	color: red;
+}
+.subItems{
+	margin-top: 20px; 
+	margin-bottom: 20px
+}
+.active1 a{
+	color: red;
+}
+a{
+	cursor: pointer;
+}

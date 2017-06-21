@@ -1,0 +1,96 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+
+		<action name="" class="controller.chucnang.BookAction" method="showListBook">
+			<result name="list-book-page">/listbook.jsp</result>
+		</action>
+
+		<action name="show-list-book" class="controller.chucnang.BookAction"
+			method="showListBook">
+			<result name="list-book-page">/listbook.jsp</result>
+		</action>
+
+		<action name="show-list-impression" class="controller.chucnang.BookAction"
+			method="showListImpression">
+			<result name="list-impression-page">/listImpression.jsp</result>
+		</action>
+
+		<action name="add-book" class="controller.chucnang.BookAction"
+			method="addBook">
+			<result name="list-book-page" type="chain">
+				<param name="actionName">show-list-book</param>
+				<param name="message">${message}</param>
+
+			</result>
+		</action>
+
+		<action name="delete-book" class="controller.chucnang.BookAction"
+			method="deleteBook">
+			<result name="list-book-page" type="chain">
+				<param name="actionName">show-list-book</param>
+				<param name="message">${message}</param>
+
+			</result>
+		</action>
+
+		<action name="delete-impression" class="controller.chucnang.BookAction"
+			method="deleteImpression">
+			<result name="back-list-impression" type="chain">
+				<param name="actionName">show-list-impression</param>
+				<param name="bookId">${bookId}</param>
+				<param name="message">${message}</param>
+			</result>
+		</action>
+
+		<action name="update-book" class="controller.chucnang.BookAction"
+			method="updateBook">
+			<result name="list-book-page" type="chain">
+				<param name="actionName">show-list-book</param>
+				<param name="message">${message}</param>
+
+			</result>
+		</action>
+
+		<action name="show-update-page" class="controller.chucnang.BookAction"
+			method="showUpdatePage">
+			<result name="update-page">/updateBook.jsp
+			</result>
+		</action>
+
+		<action name="show-add-impression-page" class="controller.chucnang.BookAction"
+			method="showAddImpressionPage">
+			<result name="add-impression-page">/addImpression.jsp
+			</result>
+		</action>
+
+		<action name="add-impression" class="controller.chucnang.BookAction"
+			method="addImpression">
+			<result name="back-list-impression" type="chain">
+				<param name="actionName">show-list-impression</param>
+				<param name="bookId">${bookId}</param>
+				<param name="message">${message}</param>
+			</result>
+		</action>
+
+		<action name="show-impression-update-page" class="controller.chucnang.BookAction"
+			method="showImpressionUpdatePage">
+			<result name="update-page">/updateImpression.jsp
+			</result>
+		</action>
+
+		<action name="impression-update" class="controller.chucnang.BookAction"
+			method="updateImpression">
+			<result name="back-list-impression" type="chain">
+				<param name="actionName">show-list-impression</param>
+				<param name="bookId">${bookId}</param>
+				<param name="message">${message}</param>
+			</result>
+		</action>
+
+	</package>
+
+</struts>
